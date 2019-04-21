@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.datadisplay.UserDetailsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen10"
+                android:layout_marginBottom="@dimen/dimen20"
+                android:text="User Details"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen10"
+                android:weightSum="10">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/button_border">
+
+                    <ImageView
+                        android:id="@+id/realImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/thumbnailImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/shape" />
+
+                    <TextView
+                        android:id="@+id/textapToTakePhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumbnailImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Tap to take Photo"
+                        android:textColor="@color/secondaryColorOrange4"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/reTake"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:backgroundTint="#80000000"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_deep_orange_200_24dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:paddingBottom="2dp"
+                        android:text="RETAKE"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/secondaryColorOrange1"
+                        android:visibility="gone"
+                        tools:ignore="RtlCompat" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen20"
+                android:text="Name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen10"
+                android:textColor="@color/secondaryColorOrange4"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen20"
+                android:text="Designation"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen10"
+                android:textColor="@color/secondaryColorOrange4"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen20"
+                android:text="City"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen10"
+                android:textColor="@color/secondaryColorOrange4"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen20"
+                android:text="Employee Id"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/eId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen10"
+                android:textColor="@color/secondaryColorOrange4"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen20"
+                android:text="Salary"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginTop="@dimen/dimen10"
+                android:layout_marginBottom="@dimen/dimen10"
+                android:textColor="@color/secondaryColorOrange4"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

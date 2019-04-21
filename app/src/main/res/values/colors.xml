@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#005582</color>
+    <color name="colorPrimaryDark">#0d4669</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorCircle">#f4724d</color>
+    <color name="whiteColor1">#fafafa</color>
+    <color name="white">#ffffff</color>
+    <color name="secondaryColorOrange1">#ff9c65</color>
+    <color name="primaryColorBlue2">#005582</color>
+    <color name="secondaryColorOrange4">#ff713e</color>
+
+</resources>
+
